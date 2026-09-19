@@ -52,7 +52,7 @@ export default async function OpenGraphImage() {
         }}
       >
         <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', width: 620 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
             <div style={{ width: 44, height: 44, borderRadius: 11, background: '#a5592e', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: 3, padding: '0 10px' }}>
               <div style={{ height: 5, width: 24, borderRadius: 2, background: '#fff' }} />
               <div style={{ height: 5, width: 16, borderRadius: 2, background: '#fff', opacity: 0.85 }} />
