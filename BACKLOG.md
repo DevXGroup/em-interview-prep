@@ -1,5 +1,5 @@
 ---
-project: FAANG INTERVIEW
+project: em-interview-prep
 name: Interview Prep
 status: live
 updated: 2026-09-12

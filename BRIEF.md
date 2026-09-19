@@ -1,6 +1,6 @@
 # EM Interview Mastery
 
-Live: https://interviewprep.devxgroup.io · Repo: DevXGroup/faang-interview · Owner: Max Sheikhizadeh
+Live: https://interviewprep.devxgroup.io · Repo: DevXGroup/em-interview-prep · Owner: Max Sheikhizadeh
 
 ## What it is
 A free, open-source study tool for Engineering Manager and SDM interview loops at Meta, Amazon, Apple, Netflix, Google and Microsoft. Six tracks (behavioral, system design, coding, technical leadership, team management, AI), an eight-week plan, per-company guides, quizzes, and three "around the loop" pages (mock loop day, negotiation, debrief). Progress lives in the reader's browser; nothing to sign up for.

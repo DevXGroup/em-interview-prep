@@ -79,7 +79,7 @@ export function Footer() {
                 <span>Support this project</span>
               </a>
               <a
-                href="https://github.com/DevXGroup/Software-Engineer-Manager-Interviw-Prep"
+                href="https://github.com/DevXGroup/em-interview-prep"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex min-h-[44px] items-center justify-center gap-2 rounded-lg border border-ink-300 px-4 text-sm font-semibold text-ink-800 transition-colors duration-150 ease-out hover:bg-ink-100 dark:border-ink-700 dark:text-ink-100 dark:hover:bg-ink-800"
