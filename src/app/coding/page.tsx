@@ -202,7 +202,7 @@ export default function CodingPage() {
       <SearchParamSync onChange={syncSearchParams} />
       <div className="mx-auto max-w-7xl">
         <div className="mb-8 border-b border-ink-200 pb-8 dark:border-ink-800">
-          <h1 className="text-4xl text-ink-900 dark:text-ink-50">Coding interview mastery</h1>
+          <h1 className="text-4xl text-ink-900 dark:text-ink-50">Coding interview prep, in order</h1>
           <p className="mt-3 max-w-prose text-lg leading-relaxed text-ink-700 dark:text-ink-200">
             An interactive visualizer, ten essential patterns, and a Big O reference.
           </p>

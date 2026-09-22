@@ -12,9 +12,11 @@ One entry per deliberate design that an auditor would read as a bug. Each says w
 | D-006 | Coding visualizer starts from a fixed array, not a random one. | A random initial array produced a server/client hydration mismatch on every load. | `BASE_ARRAY` constant in `src/app/coding/page.tsx`. | Console must show no hydration error on `/coding`; the Playwright check in the release notes covers it. |
 | D-007 | The OpenGraph image fetches Source Serif from Google Fonts at render time and falls back to sans if that fails. | No serif font file is checked in; the fallback keeps social cards rendering when the font host is unreachable. | `loadFont` in `src/app/opengraph-image.tsx`. | Route returns 200 either way. |
 | D-008 | Amazon content is limited to what Amazon publishes itself (amazon.jobs, aboutamazon.com, the Leadership Principles page). Internal performance, calibration, rating, quota, promotion and offer-approval mechanics are never described, even when third-party sites report them. | The owner is bound by confidentiality toward Amazon; the site must not read as disclosing internal process. | Amazon claims in `src/data/companies.ts`, `src/data/tracks/team.ts`, `src/data/compensation.ts`, `src/data/negotiation.ts` carry an amazon.jobs URL in a comment or are generic. | Manual sweep on every content change: grep for amazon, forte, OLR, bar raiser, HV, tier, overall value. |
+| D-009 | Renamed to Loop Ready, hero broadened to software engineering interview class; content still EM-heavy, Concepts deep-dive track is next (BACKLOG). | "EM Mastery" undersold the site to working engineers; the content already covers coding and system design at a level useful beyond EM roles. | `src/lib/site.ts` SITE_NAME/SITE_TAGLINE, hero in `src/app/page.tsx`, wordmark in `src/components/Navigation.tsx`. | None automated; grep for "EM Mastery"/"EM Interview" should return nothing user-facing. |
 
 ## Changelog
 
 | Date | Change |
 |---|---|
 | 2026-09-12 | File created with D-001 to D-008 during the design and content pass. |
+| 2026-09-22 | D-009: renamed to Loop Ready. |

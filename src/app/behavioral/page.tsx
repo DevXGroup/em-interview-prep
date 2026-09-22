@@ -91,7 +91,7 @@ export default function BehavioralPage() {
       <SearchParamSync onChange={syncSearchParams} />
       <div className="mx-auto max-w-7xl">
         <div className="mb-8 border-b border-ink-200 pb-8 dark:border-ink-800">
-          <h1 className="text-4xl text-ink-900 dark:text-ink-50">Behavioral interview mastery</h1>
+          <h1 className="text-4xl text-ink-900 dark:text-ink-50">Behavioral interview prep, in order</h1>
           <p className="mt-3 max-w-prose text-lg leading-relaxed text-ink-700 dark:text-ink-200">Company leadership frameworks, {questions.length} full STAR answers with weak, borderline and strong versions of each, and practice mode.</p>
           <p className="mt-3 text-sm text-ink-600 dark:text-ink-300">
             <span className="font-mono tabular-nums">{covered}/{behavioralItemIds.length}</span> covered

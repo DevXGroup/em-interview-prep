@@ -30,15 +30,16 @@ export default function HomePage() {
       <section className="page-shell pb-14 pt-14 sm:pt-20">
         <div className="max-w-3xl">
           <h1 className="text-4xl leading-[1.05] text-ink-900 dark:text-ink-50 sm:text-5xl lg:text-6xl">
-            Engineering Manager
+            The software engineering
             <br />
-            interview prep, <em className="font-normal italic text-clay-700 dark:text-clay-400">in order</em>.
+            interview class, <em className="font-normal italic text-clay-700 dark:text-clay-400">in order</em>.
           </h1>
 
           <p className="mt-6 max-w-prose text-lg leading-relaxed text-ink-700 dark:text-ink-200">
-            Six tracks, an eight-week plan, and per-company breakdowns for Meta, Amazon,
-            Apple, Netflix, Google and Microsoft. Free, open source, and nothing to sign up for.
-            Your progress is stored in this browser.
+            System design, coding, behavioral and leadership, taught the way interviewers grade them.
+            Six tracks, an eight-week plan, and loop breakdowns for Meta, Amazon, Apple, Netflix,
+            Google and Microsoft. Built for engineers and engineering managers. Free, open source,
+            nothing to sign up for. Your progress stays in this browser.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">

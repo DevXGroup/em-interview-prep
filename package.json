@@ -1,7 +1,7 @@
 {
   "name": "em-interview-prep",
   "version": "1.0.0",
-  "description": "Free, open-source Engineering Manager interview prep for FAANG companies — Visit https://interviewprep.devxgroup.io/",
+  "description": "Loop Ready: the free software engineering interview class for FAANG loops — Visit https://interviewprep.devxgroup.io/",
   "homepage": "https://interviewprep.devxgroup.io/",
   "repository": "https://github.com/DevXGroup/em-interview-prep",
   "private": true,

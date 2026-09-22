@@ -33,10 +33,10 @@ const mono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'EM Interview Mastery: Free FAANG Engineering Manager Prep',
-    template: '%s | EM Interview Mastery',
+    default: 'Loop Ready: The Free Software Engineering Interview Class',
+    template: '%s | Loop Ready',
   },
-  description: 'Free, open-source interview prep for Engineering Manager roles at Meta, Amazon, Apple, Netflix, Google & Microsoft. Behavioral, system design, coding, technical leadership, team management, and AI interview tracks, plus an eight-week plan.',
+  description: 'Free, open-source interview prep for software engineers and engineering managers at Meta, Amazon, Apple, Netflix, Google & Microsoft. Behavioral, system design, coding, technical leadership, team management, and AI interview tracks, plus an eight-week plan.',
   keywords: [
     'engineering manager interview',
     'FAANG interview prep',
@@ -67,17 +67,17 @@ export const metadata: Metadata = {
     canonical: SITE_URL,
   },
   openGraph: {
-    title: 'EM Interview Mastery: Free FAANG Engineering Manager Prep',
-    description: 'Free, open-source interview prep for EM roles at Meta, Amazon, Apple, Netflix, Google & Microsoft. Behavioral, system design, coding, leadership, and AI topics.',
+    title: 'Loop Ready: The Free Software Engineering Interview Class',
+    description: 'Free, open-source interview prep for software engineers and engineering managers at Meta, Amazon, Apple, Netflix, Google & Microsoft. Behavioral, system design, coding, leadership, and AI topics.',
     url: SITE_URL,
-    siteName: 'EM Interview Mastery',
+    siteName: 'Loop Ready',
     type: 'website',
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'EM Interview Mastery: Free FAANG Engineering Manager Prep',
-    description: 'Free, open-source interview prep for EM roles at Meta, Amazon, Apple, Netflix, Google & Microsoft.',
+    title: 'Loop Ready: The Free Software Engineering Interview Class',
+    description: 'Free, open-source interview prep for software engineers and engineering managers at Meta, Amazon, Apple, Netflix, Google & Microsoft.',
     creator: '@devxgroup',
     site: '@devxgroup',
   },
