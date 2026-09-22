@@ -1,12 +1,12 @@
-# Loop Ready
+# SWE Interview Prep
 
 Live: https://interviewprep.devxgroup.io · Repo: DevXGroup/em-interview-prep · Owner: Max Sheikhizadeh
 
 ## What it is
 A free, open-source study tool for software engineering interview loops at Meta, Amazon, Apple, Netflix, Google and Microsoft, built for engineers and engineering managers. Six tracks (behavioral, system design, coding, technical leadership, team management, AI), an eight-week plan, per-company guides, quizzes, and three "around the loop" pages (mock loop day, negotiation, debrief). Progress lives in the reader's browser; nothing to sign up for.
 
-## 2026-09-22: Renamed to Loop Ready
-Product renamed from "EM Interview Mastery" to "Loop Ready" ("loop" = the full onsite interview day). Hero broadened from an EM-only pitch to a software engineering interview class for engineers and EMs. Content is still EM-heavy; see BACKLOG for the Concepts deep-dive track that broadens coverage.
+## 2026-09-22: Renamed to SWE Interview Prep
+Product renamed from "EM Interview Mastery" to "Loop Ready" and then, the same day, to "SWE Interview Prep" because "Loop Ready" did not say what the product is to a stranger. Hero broadened from an EM-only pitch to a software engineering interview class for engineers and EMs. Content is still EM-heavy; see BACKLOG for the Concepts deep-dive track that broadens coverage.
 
 ## Who it is for
 Working engineers and tech leads, usually studying in the evening on a laptop, in 20 to 60 minute sessions. The job: find the weakest topic, drill it, and know how much of the material is actually covered.

@@ -1,7 +1,7 @@
 {
   "name": "em-interview-prep",
   "version": "1.0.0",
-  "description": "Loop Ready: the free software engineering interview class for FAANG loops — Visit https://interviewprep.devxgroup.io/",
+  "description": "SWE Interview Prep: the free software engineering interview class for FAANG loops — Visit https://interviewprep.devxgroup.io/",
   "homepage": "https://interviewprep.devxgroup.io/",
   "repository": "https://github.com/DevXGroup/em-interview-prep",
   "private": true,

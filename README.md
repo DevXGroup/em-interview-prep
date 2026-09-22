@@ -1,4 +1,4 @@
-# Loop Ready
+# SWE Interview Prep
 
 A free, open-source study tool for Engineering Manager and SDM interview loops at Meta, Amazon, Apple, Netflix, Google and Microsoft. Six topic tracks, an eight-week roadmap, six per-company guides, quizzes, and three "around the loop" pages (mock loop day, negotiation, debrief). Progress lives in the reader's browser. No account, no server.
 

@@ -48,9 +48,9 @@ export function Navigation() {
           <div className="flex items-center gap-8">
             <Link href="/" className="flex min-h-[44px] items-center gap-2">
               <Mark size={28} className="shrink-0" />
-              <span className="flex items-baseline gap-[0.2em] text-lg font-semibold leading-none tracking-tight text-ink-900 dark:text-ink-50">
-                <span>Loop</span>
-                <span className="font-display font-semibold italic leading-none tracking-[-0.02em] text-clay-700 dark:text-clay-400">Ready</span>
+              <span className="flex items-baseline gap-[0.2em] text-base font-semibold leading-none tracking-tight text-ink-900 dark:text-ink-50 sm:text-lg">
+                <span>SWE</span>
+                <span className="font-display font-semibold italic leading-none tracking-[-0.02em] text-clay-700 dark:text-clay-400">Interview Prep</span>
               </span>
             </Link>
 

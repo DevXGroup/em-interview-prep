@@ -8,7 +8,7 @@ todos:
   - id: concepts-deep-dive-track
     priority: P2
     title: "Concepts deep-dive track (caching, consistency/CAP, queues, indexing, concurrency, networking) framed as interview questions"
-    why: "Rename to Loop Ready broadened the pitch to software engineers; content is still EM-heavy and needs a track that covers core CS/systems concepts the way interviewers actually ask about them."
+    why: "Rename to SWE Interview Prep broadened the pitch to software engineers; content is still EM-heavy and needs a track that covers core CS/systems concepts the way interviewers actually ask about them."
     owner: claude
   - id: next-15-upgrade
     priority: P1

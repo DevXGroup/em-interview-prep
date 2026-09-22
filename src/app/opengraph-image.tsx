@@ -58,7 +58,7 @@ export default async function OpenGraphImage() {
               <div style={{ height: 5, width: 16, borderRadius: 2, background: '#fff', opacity: 0.85 }} />
               <div style={{ height: 5, width: 8, borderRadius: 2, background: '#fff', opacity: 0.7 }} />
             </div>
-            <div style={{ fontSize: 28, fontFamily: 'sans-serif', fontWeight: 600 }}>Loop Ready</div>
+            <div style={{ fontSize: 28, fontFamily: 'sans-serif', fontWeight: 600 }}>Software Engineering Interview Prep</div>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             <div style={{ fontSize: 64, lineHeight: 1.05, letterSpacing: '-0.02em' }}>

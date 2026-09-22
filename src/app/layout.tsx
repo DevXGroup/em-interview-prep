@@ -33,8 +33,8 @@ const mono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Loop Ready: The Free Software Engineering Interview Class',
-    template: '%s | Loop Ready',
+    default: 'SWE Interview Prep: Free Software Engineering Interview Class',
+    template: '%s | SWE Interview Prep',
   },
   description: 'Free, open-source interview prep for software engineers and engineering managers at Meta, Amazon, Apple, Netflix, Google & Microsoft. Behavioral, system design, coding, technical leadership, team management, and AI interview tracks, plus an eight-week plan.',
   keywords: [
@@ -67,16 +67,16 @@ export const metadata: Metadata = {
     canonical: SITE_URL,
   },
   openGraph: {
-    title: 'Loop Ready: The Free Software Engineering Interview Class',
+    title: 'SWE Interview Prep: Free Software Engineering Interview Class',
     description: 'Free, open-source interview prep for software engineers and engineering managers at Meta, Amazon, Apple, Netflix, Google & Microsoft. Behavioral, system design, coding, leadership, and AI topics.',
     url: SITE_URL,
-    siteName: 'Loop Ready',
+    siteName: 'SWE Interview Prep',
     type: 'website',
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Loop Ready: The Free Software Engineering Interview Class',
+    title: 'SWE Interview Prep: Free Software Engineering Interview Class',
     description: 'Free, open-source interview prep for software engineers and engineering managers at Meta, Amazon, Apple, Netflix, Google & Microsoft.',
     creator: '@devxgroup',
     site: '@devxgroup',

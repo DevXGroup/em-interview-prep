@@ -13,6 +13,7 @@ One entry per deliberate design that an auditor would read as a bug. Each says w
 | D-007 | The OpenGraph image fetches Source Serif from Google Fonts at render time and falls back to sans if that fails. | No serif font file is checked in; the fallback keeps social cards rendering when the font host is unreachable. | `loadFont` in `src/app/opengraph-image.tsx`. | Route returns 200 either way. |
 | D-008 | Amazon content is limited to what Amazon publishes itself (amazon.jobs, aboutamazon.com, the Leadership Principles page). Internal performance, calibration, rating, quota, promotion and offer-approval mechanics are never described, even when third-party sites report them. | The owner is bound by confidentiality toward Amazon; the site must not read as disclosing internal process. | Amazon claims in `src/data/companies.ts`, `src/data/tracks/team.ts`, `src/data/compensation.ts`, `src/data/negotiation.ts` carry an amazon.jobs URL in a comment or are generic. | Manual sweep on every content change: grep for amazon, forte, OLR, bar raiser, HV, tier, overall value. |
 | D-009 | Renamed to Loop Ready, hero broadened to software engineering interview class; content still EM-heavy, Concepts deep-dive track is next (BACKLOG). | "EM Mastery" undersold the site to working engineers; the content already covers coding and system design at a level useful beyond EM roles. | `src/lib/site.ts` SITE_NAME/SITE_TAGLINE, hero in `src/app/page.tsx`, wordmark in `src/components/Navigation.tsx`. | None automated; grep for "EM Mastery"/"EM Interview" should return nothing user-facing. |
+| D-010 | Renamed to SWE Interview Prep on 2026-09-22 because "Loop Ready" did not say what the product is to a stranger. | Max rejected "Loop Ready" as unclear at first glance; the name now states the product plainly. | `src/lib/site.ts` SITE_NAME, metadata in `src/app/layout.tsx`, OG image in `src/app/opengraph-image.tsx`, wordmark in `src/components/Navigation.tsx`. | None automated; grep for "Loop Ready" should return nothing user-facing. |
 
 ## Changelog
 
@@ -20,3 +21,4 @@ One entry per deliberate design that an auditor would read as a bug. Each says w
 |---|---|
 | 2026-09-12 | File created with D-001 to D-008 during the design and content pass. |
 | 2026-09-22 | D-009: renamed to Loop Ready. |
+| 2026-09-22 | D-010: renamed to SWE Interview Prep, same day, after Max rejected "Loop Ready" as unclear. |
