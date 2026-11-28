@@ -21,6 +21,10 @@ todos:
     why: "Roadmap ticks live in their own localStorage key by design (DECISIONS D-004). Revisit only if readers ask for one reset button."
     owner: claude
 completed:
+  - id: self-host-fonts
+    done: 2026-11-28
+    outcome: "EM1: fonts self-hosted via next/font/local (same families, weights, variables); OG image reads local woff files. Build passes with Google font hosts blocked."
+    docs: docs/DECISIONS.md
   - id: reconcile-dirty-file
     done: 2026-09-12
     outcome: "No dirty file remained; tree was clean at the start of the design pass."

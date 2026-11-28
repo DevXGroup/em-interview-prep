@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { IBM_Plex_Sans, IBM_Plex_Mono, Source_Serif_4 } from 'next/font/google'
+import localFont from 'next/font/local'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import { SITE_URL } from '@/lib/site'
@@ -8,26 +8,42 @@ import { ThemeProvider } from '@/components/ThemeProvider'
 import { Footer } from '@/components/Footer'
 import { DonateToast } from '@/components/DonateToast'
 
-const sans = IBM_Plex_Sans({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
+// Self-hosted (OFL, latin subset) so a production build never depends on fonts.googleapis.com.
+const sans = localFont({
+  src: [
+    { path: './fonts/ibm-plex-sans-latin-400-normal.woff2', weight: '400', style: 'normal' },
+    { path: './fonts/ibm-plex-sans-latin-500-normal.woff2', weight: '500', style: 'normal' },
+    { path: './fonts/ibm-plex-sans-latin-600-normal.woff2', weight: '600', style: 'normal' },
+    { path: './fonts/ibm-plex-sans-latin-700-normal.woff2', weight: '700', style: 'normal' },
+  ],
   variable: '--font-sans',
   display: 'swap',
+  fallback: ['ui-sans-serif', 'system-ui', 'sans-serif'],
 })
 
-const display = Source_Serif_4({
-  subsets: ['latin'],
-  weight: ['400', '600', '700'],
-  style: ['normal', 'italic'],
+const display = localFont({
+  src: [
+    { path: './fonts/source-serif-4-latin-400-normal.woff2', weight: '400', style: 'normal' },
+    { path: './fonts/source-serif-4-latin-600-normal.woff2', weight: '600', style: 'normal' },
+    { path: './fonts/source-serif-4-latin-700-normal.woff2', weight: '700', style: 'normal' },
+    { path: './fonts/source-serif-4-latin-400-italic.woff2', weight: '400', style: 'italic' },
+    { path: './fonts/source-serif-4-latin-600-italic.woff2', weight: '600', style: 'italic' },
+    { path: './fonts/source-serif-4-latin-700-italic.woff2', weight: '700', style: 'italic' },
+  ],
   variable: '--font-display',
   display: 'swap',
+  fallback: ['ui-serif', 'Georgia', 'serif'],
 })
 
-const mono = IBM_Plex_Mono({
-  subsets: ['latin'],
-  weight: ['400', '500', '600'],
+const mono = localFont({
+  src: [
+    { path: './fonts/ibm-plex-mono-latin-400-normal.woff2', weight: '400', style: 'normal' },
+    { path: './fonts/ibm-plex-mono-latin-500-normal.woff2', weight: '500', style: 'normal' },
+    { path: './fonts/ibm-plex-mono-latin-600-normal.woff2', weight: '600', style: 'normal' },
+  ],
   variable: '--font-mono',
   display: 'swap',
+  fallback: ['ui-monospace', 'SFMono-Regular', 'monospace'],
 })
 
 export const metadata: Metadata = {

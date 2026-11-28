@@ -17,5 +17,8 @@ A DevX Group portfolio piece and a goodwill asset for the engineering community.
 ## Where it stands (2026-09-12)
 Full design and content pass shipped: Evening Desk design system applied to every route, dead progress tracking replaced with per-item "Mark covered" controls feeding the home coverage chart, request-flow diagrams per system design scenario, loop timelines per company, verified compensation data (levels.fyi medians, dated), 16 behavioral questions with weak/borderline/strong tiers, 17 AI questions current to 2026 models, manager-level system design scenario with rubric, live incident stepper, headcount and planning exercises, negotiation guide with offer calculator, mock loop day with timer and score sheet, debrief workbench. Amazon content limited to what Amazon publishes (docs/DECISIONS.md D-008). Search index derived from the data modules.
 
+## Where it stands (2026-11-28)
+Fonts are self-hosted (`src/app/fonts/`, `next/font/local`), so a Google Fonts outage can no longer fail a production build (EM1, DECISIONS D-007).
+
 ## What happens next
 See BACKLOG.md. Top item: Next.js 14 to 15 upgrade (audit flags a critical advisory on the 14.x line).

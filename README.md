@@ -130,6 +130,10 @@ src/
     searchNavigation.ts
 ```
 
+## Fonts
+
+IBM Plex Sans, IBM Plex Mono and Source Serif 4 are self-hosted (latin subset, SIL OFL, licenses next to the files in `src/app/fonts/`) through `next/font/local` in `src/app/layout.tsx`. The OpenGraph image reads the Source Serif woff files from the same folder. Builds never contact Google Fonts. To change a weight, add the file from the `@fontsource/<family>` package and list it in `layout.tsx`.
+
 ## Deployment
 
 Deployed on Vercel. `vercel.json` sets the build/dev/install commands and a fixed response header set on every route (`X-Content-Type-Options: nosniff`, `X-Frame-Options: DENY`, `X-XSS-Protection`, `Referrer-Policy: strict-origin-when-cross-origin`). `src/lib/site.ts` holds the single `SITE_URL` constant that `src/app/sitemap.ts` and `src/app/robots.ts` both read, so the sitemap, the robots rules and any metadata that needs the site origin stay in sync from one place.
