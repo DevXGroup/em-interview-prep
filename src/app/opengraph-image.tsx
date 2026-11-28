@@ -1,3 +1,5 @@
+import { readFile } from 'node:fs/promises'
+import path from 'node:path'
 import { ImageResponse } from 'next/og'
 import { SITE_NAME } from '@/lib/site'
 
@@ -14,29 +16,21 @@ const tracks = [
   ['AI Interview', 22],
 ] as const
 
-async function loadFont(css: string, text: string): Promise<ArrayBuffer | null> {
-  try {
-    const res = await fetch(`https://fonts.googleapis.com/css2?family=${css}&text=${encodeURIComponent(text)}`, {
-      headers: { 'User-Agent': 'Mozilla/5.0' },
-    })
-    const url = (await res.text()).match(/src: url\((.+?)\) format\('(?:truetype|opentype|woff)'\)/)?.[1]
-    if (!url) return null
-    return await (await fetch(url)).arrayBuffer()
-  } catch {
-    return null
-  }
+// Self-hosted (OFL) so the build never fetches fonts from Google. satori reads woff, not woff2.
+// The route is prerendered at build, so the files are read once from the repo.
+async function loadFont(file: string): Promise<Buffer> {
+  return readFile(path.join(process.cwd(), 'src/app/fonts', file))
 }
 
 export default async function OpenGraphImage() {
-  const headline = 'Engineering Manager interview prep, in order.'
   const [serif, serifItalic] = await Promise.all([
-    loadFont('Source+Serif+4:wght@600', headline),
-    loadFont('Source+Serif+4:ital,wght@1,600', headline),
+    loadFont('source-serif-4-latin-600-normal.woff'),
+    loadFont('source-serif-4-latin-600-italic.woff'),
   ])
   const fonts = [
-    serif && { name: 'Serif', data: serif, weight: 600 as const, style: 'normal' as const },
-    serifItalic && { name: 'Serif', data: serifItalic, weight: 600 as const, style: 'italic' as const },
-  ].filter(Boolean) as { name: string; data: ArrayBuffer; weight: 600; style: 'normal' | 'italic' }[]
+    { name: 'Serif', data: serif, weight: 600 as const, style: 'normal' as const },
+    { name: 'Serif', data: serifItalic, weight: 600 as const, style: 'italic' as const },
+  ]
 
   return new ImageResponse(
     (
